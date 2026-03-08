@@ -53,16 +53,53 @@ fn1("Sana Ullah", 19, "Siddiqui");
 
 // Object and type alias 
 
-type UserObj = {
+type userObj = {
     name : string;
     email : string;
     password: string;
     isLogedIn : boolean;
 };
 
-let user :  UserObj = {
+type userObject = userObj & {
+    age : number;
+    phone : number;
+}
+
+let user1 : userObject = {
+    name : "Sana Ullah Siddiqui",
+    email: "sanaullah@gmail.com",
+    age: 19,
+    phone: 1234567890,
+}
+console.log(user1);
+
+let user :  userObj = {
     name : "Sana Ullah Siddiqui",
     email: "sanaullah@gmail.com",
     password: "34324@#$3sana",
     isLogedIn: true
 };
+console.log(user);
+
+
+interface userInterface {   
+    name : string;
+    email : string;
+    password: string;
+    isLogedIn : boolean;
+}
+
+interface userInterface1 {
+    age : number;
+    phone : number;
+}
+
+let user11 : userInterface & userInterface1 = {
+    name : "Sana Ullah Siddiqui",
+    email: "sanaullahsiddiqui@gmail.com",
+    age: 19,
+    phone: 1234567890,
+}
+
+console.log(user11);
+

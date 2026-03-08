@@ -37,11 +37,26 @@ function fn1(a, b, c) {
     console.log(a, b, c);
 }
 fn1("Sana Ullah", 19, "Siddiqui");
+let user1 = {
+    name: "Sana Ullah Siddiqui",
+    email: "sanaullah@gmail.com",
+    age: 19,
+    phone: 1234567890,
+};
+console.log(user1);
 let user = {
     name: "Sana Ullah Siddiqui",
     email: "sanaullah@gmail.com",
     password: "34324@#$3sana",
     isLogedIn: true
 };
+console.log(user);
+let user11 = {
+    name: "Sana Ullah Siddiqui",
+    email: "sanaullahsiddiqui@gmail.com",
+    age: 19,
+    phone: 1234567890,
+};
+console.log(user11);
 export {};
 //# sourceMappingURL=app.js.map
